@@ -1,6 +1,6 @@
 {
   "name": "mjml-django-extensions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of tags to make it compatible with Django's render engine",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
   },
   "author": "Wesley Ameling <engineercoding@gmail.com>",
   "repository": "https://github.com/EngineerCoding/mjml-django-extension",
-  "keywords": ["mjml", "django"],
+  "keywords": [
+    "mjml",
+    "django"
+  ],
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
