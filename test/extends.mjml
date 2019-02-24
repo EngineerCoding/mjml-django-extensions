@@ -1,0 +1,10 @@
+<django-extends template="test-template.html">
+    <django-block name="overriding-block">
+        <mj-text>Sample text</mj-text>
+        <mj-section>
+            <mj-column>
+                <mj-text>Random!</mj-text>
+            </mj-column>
+        </mj-section>
+    </django-block>
+</django-extends>

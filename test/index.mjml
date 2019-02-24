@@ -6,10 +6,5 @@
       </mj-text>
     </django-block>
     <django-include template="test-template.html"></django-include>
-    <django-extends template="test-template.html">
-        <django-block name="overriding-block">
-            <mj-text>Sample text</mj-text>
-        </django-block>
-    </django-extends>
   </mj-body>
 </mjml>
