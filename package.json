@@ -1,6 +1,6 @@
 {
   "name": "mjml-django-extensions",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A set of tags to make it compatible with Django's render engine",
   "main": "bin/mjml-django",
   "bin": {
