@@ -24,8 +24,12 @@ const compile = (done) => {
     .on('error', log)
     .pipe(gulp.dest('lib'))
     .on('end', () => {
-      require("./index.js");
-
+      watchedComponents.forEach(compPath => {
+        const fullPath = path.join(process.cwd(), compPath.replace(/^components/, 'lib'))
+        delete require.cache[fullPath];
+        registerComponent(require(fullPath).default)
+      });
+      
       fs.readFile(path.normalize('./index.mjml'), 'utf8', (err, data) => {
         if (err) throw err;
         const result = mjml2html(data);
