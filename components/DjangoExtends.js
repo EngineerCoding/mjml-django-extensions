@@ -17,7 +17,7 @@ export default class DjangoExtends extends BodyComponent {
     };
 
     render() {
-        return `{% extends '${this.getAttribute('template')} %}
+        return `{% extends '${this.getAttribute('template')}' %}
                 ${this.renderChildren(this.props.children)}`;
     }
 }
