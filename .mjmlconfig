@@ -1,7 +1,0 @@
-{
-  "packages": [
-    "./lib/DjangoBlock.js",
-    "./lib/DjangoInclude.js",
-    "./lib/DjangoExtends.js"
-  ]
-}

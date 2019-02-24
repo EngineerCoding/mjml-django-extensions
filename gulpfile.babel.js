@@ -24,11 +24,7 @@ const compile = (done) => {
     .on('error', log)
     .pipe(gulp.dest('lib'))
     .on('end', () => {
-      watchedComponents.forEach(compPath => {
-        const fullPath = path.join(process.cwd(), compPath.replace(/^components/, 'lib'))
-        delete require.cache[fullPath];
-        registerComponent(require(fullPath).default)
-      });
+      require("./index.js");
 
       fs.readFile(path.normalize('./index.mjml'), 'utf8', (err, data) => {
         if (err) throw err;

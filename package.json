@@ -8,8 +8,10 @@
     "build": "gulp build",
     "lint": "eslint components"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Wesley Ameling <engineercoding@gmail.com>",
+  "repository": "https://github.com/EngineerCoding/mjml-django-extension",
+  "keywords": ["mjml", "django"],
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^6.1.2",
@@ -27,7 +29,6 @@
     "gulp-watch": "^5.0.1"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
     "lodash": "^4.17.11",
     "mjml": "^4.3.1"
   }

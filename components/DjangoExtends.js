@@ -1,13 +1,4 @@
-import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
-
-registerDependencies({
-    'django-extensions': [
-        'django-block',
-        'django-include',
-    ],
-    'mj-wrapper': ['django-extensions']
-});
 
 /**
  * Allows the use of django blocks in the rendered HTML
