@@ -3,9 +3,9 @@ import {registerDependencies} from 'mjml-validator'
 
 registerDependencies({
     'django-extends': [
-        'django-include',
         'django-block'
-    ]
+    ],
+    'mj-body': ['django-extends']
 });
 
 /**
@@ -17,10 +17,7 @@ export default class DjangoExtends extends BodyComponent {
     };
 
     render() {
-        return `
-{% extends '${this.getAttribute('template')} %}
-
-${this.renderChildren(this.props.children)}
-`;
+        return `{% extends '${this.getAttribute('template')} %}
+                ${this.renderChildren(this.props.children)}`;
     }
 }

@@ -30,7 +30,8 @@ registerDependencies({
         'mj-spacer',
         'mj-table',
         'mj-text',
-        'mj-wrapper'
+        'mj-wrapper',
+        'django-include'
     ]
 });
 
@@ -43,10 +44,8 @@ export default class DjangoBlock extends BodyComponent {
     };
 
     render() {
-        return `
-{% block ${this.getAttribute('name')} %}
-${this.renderChildren(this.props.children)}
-{% endblock %}
-`;
+        return `{% block ${this.getAttribute('name')} %}
+                ${this.renderChildren(this.props.children)}
+                {% endblock %}`;
     }
 }

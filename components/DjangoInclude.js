@@ -21,8 +21,6 @@ export default class DjangoInclude extends BodyComponent {
     static endingTag = true;
 
     render() {
-        return `
-{% include '${this.getAttribute('template')}' %}
-`;
+        return `{% include '${this.getAttribute('template')}' %}`;
     }
 }

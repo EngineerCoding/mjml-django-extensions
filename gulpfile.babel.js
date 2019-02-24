@@ -1,6 +1,5 @@
 import gulp from 'gulp'
 import babel from 'gulp-babel'
-import watch from 'gulp-watch'
 import {execSync} from 'child_process'
 import log from 'fancy-log'
 import fs from 'fs'
@@ -29,15 +28,10 @@ gulp.task('build', compile);
 gulp.task('test', (done) => {
     compile().on('end', () => {
         execSync('npx mjml test/index.mjml -o test/index.html');
+
         execSync('npx mjml test/extends.mjml -o test/extends.html');
+        execSync('./bin/mjml-django test/extends.html');
+
         done();
     })
-});
-
-gulp.task('watch', () => {
-    compile();
-    return watch([
-        path.normalize('components/**/*.js'),
-        path.normalize('index.mjml'),
-    ], compile)
 });

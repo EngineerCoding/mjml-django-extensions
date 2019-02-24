@@ -2,7 +2,10 @@
   "name": "mjml-django-extensions",
   "version": "1.0.2",
   "description": "A set of tags to make it compatible with Django's render engine",
-  "main": "index.js",
+  "main": "bin/mjml-django",
+  "bin": {
+    "mjml-django": "bin/mjml-django"
+  },
   "scripts": {
     "start": "gulp watch",
     "build": "gulp build",
@@ -29,8 +32,7 @@
     "eslint-plugin-jsx-a11y": "^2.1.0",
     "fancy-log": "^1.3.2",
     "gulp": "^4.0.0",
-    "gulp-babel": "^6.1.2",
-    "gulp-watch": "^5.0.1"
+    "gulp-babel": "^6.1.2"
   },
   "dependencies": {
     "lodash": "^4.17.11",
