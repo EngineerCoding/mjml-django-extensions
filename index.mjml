@@ -1,0 +1,15 @@
+<mjml>
+  <mj-body>
+    <django-block name="my-block">
+      <mj-text color="blue" font-size="10px">
+        A super nice layout component
+      </mj-text>
+    </django-block>
+    <django-include template="test-template.html"></django-include>
+    <django-extends template="test-template.html">
+        <django-block name="overriding-block">
+            <mj-text>Sample text</mj-text>
+        </django-block>
+    </django-extends>
+  </mj-body>
+</mjml>
