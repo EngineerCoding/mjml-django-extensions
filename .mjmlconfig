@@ -2,6 +2,7 @@
   "packages": [
     "lib/DjangoBlock.js",
     "lib/DjangoInclude.js",
-    "lib/DjangoExtends.js"
+    "lib/DjangoExtends.js",
+    "lib/DjangoIf.js"
   ]
 }

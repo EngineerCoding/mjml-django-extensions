@@ -6,5 +6,8 @@
       </mj-text>
     </django-block>
     <django-include template="test-template.html"></django-include>
+    <django-if condition="true">
+        <mj-text>Conditial text</mj-text>
+    </django-if>
   </mj-body>
 </mjml>
