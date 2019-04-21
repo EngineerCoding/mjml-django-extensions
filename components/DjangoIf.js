@@ -45,7 +45,9 @@ export default class DjangoIf extends BodyComponent {
 
     render() {
         return `{% if ${this.getAttribute('condition')} %}
+                <div style="padding:10px 25px">
                 ${this.renderChildren(this.props.children)}
+                </div>
                 {% endif %}`;
     }
 }
