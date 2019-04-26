@@ -3,6 +3,8 @@
     "lib/DjangoBlock.js",
     "lib/DjangoInclude.js",
     "lib/DjangoExtends.js",
-    "lib/DjangoIf.js"
+    "lib/DjangoIf.js",
+    "lib/DjangoTrans.js",
+    "lib/DjangoBlockTrans.js"
   ]
 }

@@ -1,0 +1,11 @@
+<mjml>
+    <mj-body>
+        <mj-section>
+            <mj-column>
+                <django-trans>test</django-trans>
+                <django-block-trans color="blue">block test</django-trans>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>
+

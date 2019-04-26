@@ -31,7 +31,9 @@ registerDependencies({
         'mj-table',
         'mj-text',
         'mj-wrapper',
-        'django-include'
+        'django-include',
+        'django-block-trans',
+        'django-trans',
     ]
 });
 
