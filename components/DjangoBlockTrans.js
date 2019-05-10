@@ -8,7 +8,6 @@ registerDependencies({
     'mj-body': ['django-block-trans'],
     'mj-section': ['django-block-trans'],
     'mj-column': ['django-block-trans'],
-    'mj-button': ['django-block-trans'],
     'django-block': ['django-block-trans'],
 });
 

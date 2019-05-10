@@ -3,7 +3,8 @@
         <mj-section>
             <mj-column>
                 <django-trans>test</django-trans>
-                <django-block-trans color="blue">block test</django-trans>
+                <django-block-trans color="blue">block test</django-trans></django-block-trans>
+                <django-trans-button>Test!</django-trans-button>
             </mj-column>
         </mj-section>
     </mj-body>

@@ -5,6 +5,7 @@
     "lib/DjangoExtends.js",
     "lib/DjangoIf.js",
     "lib/DjangoTrans.js",
-    "lib/DjangoBlockTrans.js"
+    "lib/DjangoBlockTrans.js",
+    "lib/DjangoTransButton.js"
   ]
 }
