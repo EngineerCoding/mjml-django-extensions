@@ -39,7 +39,7 @@ function postProcess(file) {
         if (transIndex !== -1 || blockTransIndex !== -1) {
             // Check if extends was available, because loading should happen afterwards
             if (extendsIndex !== -1) {
-                contents = contents.replace(/({% extends '.+?' %})/g, '$1\n' + LOAD_I18N);
+                contents = contents.replace(/({% extends .+? %})/g, '$1\n' + LOAD_I18N);
             } else {
                 contents = LOAD_I18N + contents;
             }
