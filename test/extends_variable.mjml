@@ -1,0 +1,8 @@
+<mjml>
+    <mj-body>
+        <django-extends template="theme" variable="true">
+            <django-block name="overriding-block">
+            </django-block>
+        </django-extends>
+    </mj-body>
+</mjml>

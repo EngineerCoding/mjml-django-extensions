@@ -32,6 +32,9 @@ gulp.task('test', (done) => {
         execSync('npx mjml test/extends.mjml -o test/extends.html');
         execSync('./bin/mjml-django test/extends.html');
 
+        execSync('npx mjml test/extends_variable.mjml -o test/extends_variable.html');
+        execSync('./bin/mjml-django test/extends_variable.html');
+
         execSync('npx mjml test/trans.mjml -o test/trans.html');
         execSync('./bin/mjml-django test/trans.html');
 

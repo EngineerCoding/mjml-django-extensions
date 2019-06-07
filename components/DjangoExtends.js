@@ -13,11 +13,21 @@ registerDependencies({
  */
 export default class DjangoExtends extends BodyComponent {
     static allowedAttributes = {
-        template: 'string'
+        template: 'string',
+        variable: 'boolean',
+    };
+
+    static defaultAttributes = {
+        variable: false,
     };
 
     render() {
-        return `{% extends '${this.getAttribute('template')}' %}
+        let template = this.getAttribute('template');
+        if (!this.getAttribute('variable')) {
+            template = `'${template}'`;
+        }
+
+        return `{% extends ${template} %}
                 ${this.renderChildren(this.props.children)}`;
     }
 }
